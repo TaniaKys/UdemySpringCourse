@@ -13,13 +13,15 @@ public class MyApp {
         Coach baseballCoach = context.getBean("baseballCoach", Coach.class);
         Coach trackCoach = context.getBean("trackCoach", Coach.class);
         Coach danceCoach = context.getBean("danceCoach", Coach.class);
+        Coach cricketCoach = context.getBean("cricketCoach", Coach.class);
 
         //System.out.println(baseballCoach.getDailyWorkout());
         //System.out.println(trackCoach.getDailyWorkout());
-        System.out.println(danceCoach.getDailyWorkout());
+        //System.out.println(danceCoach.getDailyWorkout());
 
 
-        System.out.println(danceCoach.getDailyFortune());
+        //System.out.println(danceCoach.getDailyFortune());
+        System.out.println(cricketCoach.getDailyFortune());
         context.close();
     }
 }
