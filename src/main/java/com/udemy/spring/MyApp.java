@@ -14,10 +14,12 @@ public class MyApp {
         Coach trackCoach = context.getBean("trackCoach", Coach.class);
         Coach danceCoach = context.getBean("danceCoach", Coach.class);
 
-        System.out.println(baseballCoach.getDailyWorkout());
-        System.out.println(trackCoach.getDailyWorkout());
+        //System.out.println(baseballCoach.getDailyWorkout());
+        //System.out.println(trackCoach.getDailyWorkout());
         System.out.println(danceCoach.getDailyWorkout());
 
+
+        System.out.println(danceCoach.getDailyFortune());
         context.close();
     }
 }

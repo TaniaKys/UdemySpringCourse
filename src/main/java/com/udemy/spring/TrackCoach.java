@@ -1,10 +1,16 @@
 package com.udemy.spring;
 
-public class TrackCoach implements Coach {
+public class TrackCoach extends CoachParent {
+
+    public TrackCoach(FortuneService fortuneService) {
+        super(fortuneService);
+    }
 
     public String getDailyWorkout() {
         return "Run a hard 5k";
     }
+
+
 }
 
 

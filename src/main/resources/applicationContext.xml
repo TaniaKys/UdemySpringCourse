@@ -5,14 +5,22 @@
 
     <bean id="baseballCoach"
           class="com.udemy.spring.BaseballCoach">
+        <constructor-arg ref="myFortune"/>
     </bean>
 
     <bean id="trackCoach"
                  class="com.udemy.spring.TrackCoach">
+        <constructor-arg ref="myFortune"/>
     </bean>
 
     <bean id="danceCoach"
           class="com.udemy.spring.DanceCoach">
+        <!-- set up constructor injection -->
+        <constructor-arg ref="myFortune"/>
+    </bean>
+
+    <bean id="myFortune"
+          class="com.udemy.spring.HappyFortuneService">
     </bean>
 
 </beans>
