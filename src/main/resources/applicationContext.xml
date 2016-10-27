@@ -23,6 +23,9 @@
           class="com.udemy.spring.CricketCoach">
         <!-- set up setter injection -->
         <property name="fortuneService" ref="myFortune"/>
+        <!-- inject literal values -->
+        <property name="emailAddress" value="coach@address.com"/>
+        <property name="team" value="Cricket team"/>
     </bean>
 
     <bean id="myFortune"
