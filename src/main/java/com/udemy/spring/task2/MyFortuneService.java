@@ -1,4 +1,4 @@
-package com.udemy.spring.Task2;
+package com.udemy.spring.task2;
 
 import com.udemy.spring.FortuneService;
 

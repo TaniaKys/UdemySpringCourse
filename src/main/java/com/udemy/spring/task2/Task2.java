@@ -1,7 +1,6 @@
-package com.udemy.spring.Task2;
+package com.udemy.spring.task2;
 
 import com.udemy.spring.Coach;
-import com.udemy.spring.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Task2 {

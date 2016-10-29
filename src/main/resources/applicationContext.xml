@@ -37,11 +37,11 @@
     </bean>
 
     <bean id="myFortune"
-          class="com.udemy.spring.Task2.MyFortuneService">
+          class="com.udemy.spring.task2.MyFortuneService">
     </bean>
 
     <bean id="tennisCoach"
-          class="com.udemy.spring.Task2.TennisCoach">
+          class="com.udemy.spring.task2.TennisCoach">
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune"/>
     </bean>
