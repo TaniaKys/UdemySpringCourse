@@ -10,7 +10,15 @@ public class TrackCoach extends CoachParent {
         return "Run a hard 5k";
     }
 
+    //add init method
+    public void initMethod(){
+        System.out.println("init");
+    }
 
+    //add destroy method
+    public void destroyMethod(){
+        System.out.println("destroy");
+    }
 }
 
 

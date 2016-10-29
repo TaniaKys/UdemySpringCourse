@@ -7,23 +7,11 @@ public class MyApp {
     public static void main(String[] args){
 
         //Load the spring configuration file
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanLifeCicleAppContext.xml");
 
         //retrieve bean from spring container
-        Coach baseballCoach = context.getBean("baseballCoach", Coach.class);
         Coach trackCoach = context.getBean("trackCoach", Coach.class);
-        Coach danceCoach = context.getBean("danceCoach", Coach.class);
-        CricketCoach cricketCoach = context.getBean("cricketCoach", CricketCoach.class);
 
-        //System.out.println(baseballCoach.getDailyWorkout());
-        //System.out.println(trackCoach.getDailyWorkout());
-        //System.out.println(danceCoach.getDailyWorkout());
-
-
-        //System.out.println(danceCoach.getDailyFortune());
-        System.out.println(cricketCoach.getDailyFortune());
-        System.out.println(cricketCoach.getEmailAddress());
-        System.out.println(cricketCoach.getTeam());
         context.close();
     }
 }
