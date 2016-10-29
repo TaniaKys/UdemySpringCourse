@@ -9,31 +9,41 @@
 
     <bean id="baseballCoach"
           class="com.udemy.spring.BaseballCoach">
-        <constructor-arg ref="myFortune"/>
+        <constructor-arg ref="happyFortune"/>
     </bean>
 
     <bean id="trackCoach"
                  class="com.udemy.spring.TrackCoach">
-        <constructor-arg ref="myFortune"/>
+        <constructor-arg ref="happyFortune"/>
     </bean>
 
     <bean id="danceCoach"
           class="com.udemy.spring.DanceCoach">
         <!-- set up constructor injection -->
-        <constructor-arg ref="myFortune"/>
+        <constructor-arg ref="happyFortune"/>
     </bean>
 
     <bean id="cricketCoach"
           class="com.udemy.spring.CricketCoach">
         <!-- set up setter injection -->
-        <property name="fortuneService" ref="myFortune"/>
+        <property name="fortuneService" ref="happyFortune"/>
         <!-- inject literal values -->
         <property name="emailAddress" value="${foo.email}"/>
         <property name="team" value="${foo.team}"/>
     </bean>
 
-    <bean id="myFortune"
+    <bean id="happyFortune"
           class="com.udemy.spring.HappyFortuneService">
+    </bean>
+
+    <bean id="myFortune"
+          class="com.udemy.spring.Task2.MyFortuneService">
+    </bean>
+
+    <bean id="tennisCoach"
+          class="com.udemy.spring.Task2.TennisCoach">
+        <!-- set up constructor injection -->
+        <constructor-arg ref="myFortune"/>
     </bean>
 
 </beans>
