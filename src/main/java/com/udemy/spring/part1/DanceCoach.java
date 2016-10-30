@@ -1,4 +1,4 @@
-package com.udemy.spring;
+package com.udemy.spring.part1;
 
 
 public class DanceCoach extends CoachParent {

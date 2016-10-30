@@ -1,4 +1,4 @@
-package com.udemy.spring;
+package com.udemy.spring.part1;
 
 public abstract class CoachParent implements Coach{
 
