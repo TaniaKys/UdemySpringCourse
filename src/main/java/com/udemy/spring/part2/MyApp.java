@@ -13,6 +13,7 @@ public class MyApp {
 
         //call the method of the bean
         System.out.println(tennisCoach.getDailyWorkout());
+        System.out.println(tennisCoach.getDailyFortune());
 
         //close context
         context.close();
