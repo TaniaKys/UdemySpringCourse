@@ -6,6 +6,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
+    //field ingection
+    @Autowired
     private FortuneService fortuneService;
 
     public TennisCoach() {
@@ -39,8 +41,10 @@ public class TennisCoach implements Coach {
     */
 
     //method injection
+    /*
     @Autowired
     public void myMethod(FortuneService fortuneService){
         this.fortuneService = fortuneService;
     }
+    */
 }
