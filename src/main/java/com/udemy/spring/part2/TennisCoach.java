@@ -30,9 +30,17 @@ public class TennisCoach implements Coach {
 
 
     //setter injection
+    /*
     @Autowired
     public void setFortuneService(FortuneService fortuneService) {
         System.out.println("setter method");
+        this.fortuneService = fortuneService;
+    }
+    */
+
+    //method injection
+    @Autowired
+    public void myMethod(FortuneService fortuneService){
         this.fortuneService = fortuneService;
     }
 }
