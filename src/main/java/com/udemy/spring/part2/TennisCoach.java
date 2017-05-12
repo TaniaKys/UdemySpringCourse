@@ -8,10 +8,17 @@ public class TennisCoach implements Coach {
 
     private FortuneService fortuneService;
 
+    public TennisCoach() {
+        System.out.println("default constructor");
+    }
+
+    //constructor injection
+    /*
     @Autowired
     public TennisCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
+    */
 
     public String getDailyWorkout() {
         return "Practice your backhand volley!";
@@ -21,4 +28,11 @@ public class TennisCoach implements Coach {
         return fortuneService.getFortune();
     }
 
+
+    //setter injection
+    @Autowired
+    public void setFortuneService(FortuneService fortuneService) {
+        System.out.println("setter method");
+        this.fortuneService = fortuneService;
+    }
 }

@@ -11,7 +11,7 @@ public class MyApp {
 
         //retrieve bean from spring container
         Coach trackCoach = context.getBean("trackCoach", Coach.class);
-
+        trackCoach.getDailyFortune();
         context.close();
     }
 }
